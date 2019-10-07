@@ -10,35 +10,56 @@
 <body>
 
     <div class="container">
+        <div class ="jumbotron">
 
     <div class="row">
         <div class="col-md-12">
             <h1>Somar</h1>
+            <br>
             </div>
         </div>
 
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control texto" [value]= "pegaValor">
             </div>
           </div>
        </div>
-    
-    <div class="row">
-            <div class="form-group">
-             
-           
-                    &nbsp;&nbsp;<button class="btn btn-info" id="btn">Paçoca</button>  
-                  
-                    &nbsp;&nbsp;<button class="btn btn-info" id="btn">Sorvete</button>
-                    
-                    &nbsp;&nbsp;<button class="btn btn-info" id="btn">Chiclete</button>
-       
+             <br>
+     <div class="row" id="botao">
+
+         <div class="col-md-4">
+             <p><b>Quantidade de Lanches</b></p>
+     <button class="btn btn-info" id="btn1" (click) = "calcula (5)" >Lanche 5,00</button>  
+         </div>
+
+         <div class="col-md-4">
+            <p><b>Quantidade de Bebidas</b></p>
+    <button class="btn btn-info" id="btn2" (click) = "calcula (4)">Bebida 4,00</button>
+        </div>
+
+        <div class="col-md-4">
+            <p><b>Quantidade de Doces</b></p>
+    <button class="btn btn-info" id="btn3" (click) = "calcula (3)">Doce 3,00</button>
+         </div>
+     </div>
+         <br>
+
+        <div class="row">
+     <div class="col-md-4">
+         <input type="text" class="form-control" id="input">
+      </div>
+
+         <div class="col-md-4">
+            <input type="text" class="form-control" id="input">
+         </div>
+         <div class="col-md-4">
+        <input type="text" class="form-control" id="input">
+         </div>
+       </div>
     </div>
 
 </div> 
-
-</div>
 </body>
 </html>   
