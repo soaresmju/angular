@@ -31,31 +31,31 @@
 
          <div class="col-md-4">
              <p><b>Quantidade de Lanches</b></p>
-     <button class="btn btn-info" id="btn1" (click) = "calcula (5)" >Lanche 5,00</button>  
+     <button class="btn btn-info" id="btn1" (click) = "calcula (5, 1)" >Lanche 5,00</button>  
          </div>
 
          <div class="col-md-4">
             <p><b>Quantidade de Bebidas</b></p>
-    <button class="btn btn-info" id="btn2" (click) = "calcula (4)">Bebida 4,00</button>
+    <button class="btn btn-info" id="btn2" (click) = "calcula (4, 2)">Bebida 4,00</button>
         </div>
 
         <div class="col-md-4">
             <p><b>Quantidade de Doces</b></p>
-    <button class="btn btn-info" id="btn3" (click) = "calcula (3)">Doce 3,00</button>
+    <button class="btn btn-info" id="btn3" (click) = "calcula (3, 3)">Doce 3,00</button>
          </div>
      </div>
          <br>
 
         <div class="row">
      <div class="col-md-4">
-         <input type="text" class="form-control" id="input">
+         <input type="text" class="form-control" id="input" [value] ="lanche">
       </div>
 
          <div class="col-md-4">
-            <input type="text" class="form-control" id="input">
+            <input type="text" class="form-control" id="input" [value] = "bebida">
          </div>
          <div class="col-md-4">
-        <input type="text" class="form-control" id="input">
+        <input type="text" class="form-control" id="input" [value] = "doce">
          </div>
        </div>
     </div>
